@@ -8,8 +8,7 @@ use Illuminate\Support\Facades\Validator;
 
 class ContactController extends Controller
 {
-    public function store (Request $request) 
-    {
+    public function store (Request $request){
         $data = $request->all();
 
         $validator = Validator::make($data, [
@@ -18,10 +17,14 @@ class ContactController extends Controller
             'message' => 'required',
         ]);
 
-        if ($validator->fails) {
+        if ($validator->fails()) {
             return response()->json([
-                'success'=> false,
-                'errors'=> $validator->errors()
+                'success' => false,
+                'errors' => $validator->errors()
+            ]);
+        } else {
+            return response()->json([
+                'success' => true,
             ]);
         }
     }
