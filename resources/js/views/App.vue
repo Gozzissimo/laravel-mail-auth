@@ -1,10 +1,9 @@
 
 <template>
-    <div class="container">
+    <div>
         <Header />
-        <Main />
         <!-- component matched by the route will render here -->
-        <!-- <router-view></router-view> -->
+        <router-view></router-view>
     </div>
 </template>
 
