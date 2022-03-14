@@ -21,10 +21,10 @@
 <script>
 
 export default {
-    components: {
-        Name: 'Header',
-    },
+    name: 'Header'
+
 };
+
 </script>
 
 <style lang="scss">

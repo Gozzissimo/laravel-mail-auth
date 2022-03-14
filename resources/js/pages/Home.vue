@@ -7,9 +7,8 @@
 <script>
 
 export default {
-    components: {
-        Name: 'Home',
-    },
+    name: 'Home'
+
 };
 </script>
 

@@ -7,10 +7,10 @@
 <script>
 
 export default {
-    components: {
-        Name: 'About'
-    },
+    name: 'About'
+
 };
+
 </script>
 
 <style lang="scss" scoped>
