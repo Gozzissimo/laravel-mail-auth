@@ -13,9 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('guest.home');
-});
+// Rotta che si può levare perchè abbiamo già messo la rotta sotto con any
+
+// Route::get('/', function () {
+//     return view('guest.home');
+// });
 
 Auth::routes();
 
